@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5; /* Fondo claro */
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #E0E0E0; /* Gris claro */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #808080;
+}
+
+/* Contenedor principal */
+#container {
+    display: flex;
+    height: calc(100vh - 80px); /* Altura total menos el encabezado */
+}
+
+/* Barra lateral fija a la izquierda */
+#sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #FFF;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #E0E0E0;
+    position: fixed; /* Barra lateral fija en el lado izquierdo */
+    top: 100px; /* Espaciado debajo del encabezado */
+    bottom: 20px; /* Margen inferior */
+    overflow-y: auto; /* Activar desplazamiento */
+}
+
+#sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#sidebar form label,
+#sidebar form input,
+#sidebar form textarea,
+#sidebar form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#sidebar form textarea {
+    resize: none;
+    height: 100px; /* Ajuste de altura */
+    width: 280px; /* Ajuste de ancho */
+    border-radius: 5px;
+    border: 1px solid #A9A9A9;
+    padding: 10px;
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+#sidebar form button {
+    background-color: #A9A9A9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sidebar form button:hover {
+    background-color: #808080;
+}
+
+/* Galería principal */
+#gallery {
+    flex-grow: 1;
+    margin-left: 320px; /* Espacio reservado para la barra lateral */
+    padding: 20px;
+    text-align: center; /* Centrar contenido */
+    overflow-y: auto;
+}
+
+#gallery h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#gallery div {
+    display: inline-block; /* Alinear las fotos al centro */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 10px; /* Espaciado entre fotos */
+    width: 200px; /* Tamaño estándar */
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#gallery p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
