@@ -1,3 +1,5 @@
+<!-- HTML para la página prncipal  -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,15 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Retina del corazón</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./Recursos/Logo pagina.jpg"> <!-- icono a la pagina -->
 </head>
 <body>
   <header>
+    <img src="./Recursos/Logo pagina.jpg" alt="Logo Retina del corazón" id="header-img">
     <h1>Retina del corazón</h1>
     <nav id="menu-cuenta">
       <button id="loginBtn">Iniciar Sesión</button>
       <button id="registerBtn">Registrarse</button>
     </nav>
   </header>
+
+  <!-- Fondo oscuro de la ventana -->
+  <div id="popup-overlay" class="popup-overlay"></div>
+
+  <!-- Contenido de la ventana emergente -->
+  <div id="popup" class="popup">
+      <span class="close-btn">&times;</span>
+      <img src="./Recursos/Logo pagina.jpg" alt="Logo Retina del corazón" id="popup-logo">
+      <div class="text-container">
+        <p>
+          Espacio diseñado para almacenar y compartir sus fotos favoritas. Cuenta con una 
+          galería de imágenes, un sistema de registro e inicio de sesión y opciones 
+          interactiva que permite gestionar imágenes de manera personalizada. Utiliza un 
+          diseño minimalista e intuitivo que busca crear un espacio acogedor para guardar 
+          sus momentos especiales. 
+        </p>
+    </div>
+  </div>
 
   <main>
     
